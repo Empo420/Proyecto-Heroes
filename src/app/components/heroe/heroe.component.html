@@ -1,0 +1,17 @@
+<h1>{{heroe.nombre}} <small>{{heroe.aparicion}}</small></h1>
+<br>
+<div class="row">
+    <div class="col-md-4">
+        <img class="img-fluid" [src]="heroe.img" [alt]="heroe.nombre">
+        <br><br>
+        <button (click)="verHeroes()" class="btn btn-danger btn-block">Regresar</button>
+    </div>
+    <div class="col-md-8">
+        <h1>{{heroe.nombre}}</h1>
+        <br>
+        <p>
+            {{heroe.bio}}
+        </p>
+
+    </div>
+</div>
